@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>momentum</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container-fluid m-auto px-0 text-center">
+        <div class="row">
+            <!-- 시계 -->
+            <div class="col-md-12 js-clock mb-3">
+                <h1></h1>
+            </div>
+
+            <!-- 이름 입력/출력 공간 -->
+            <div class="col-md-12 mb-3">
+                <form class="js-form form">
+                    <input type="text" placeholder="What is your name? ✍" class="w-25 p-2" data-toggle="tooltip" data-placement="right" title="welcome 💬">
+                </form>
+                <h4 class="js-greetings greetings"></h4>
+            </div>
+
+            <!-- 투두 리스트 -->
+            <div class="col-md-12">
+                <form class="js-toDoForm">
+                    <input type="text" placeholder="Write a to do 📝" class="w-25 p-2" data-toggle="tooltip" data-placement="right" title="Write me ❤">
+                </form>
+                <ul class="js-toDoList">
+                </ul>
+            </div>
+
+            <!-- 날씨 API -->
+            <div class="col-md-12">
+                <p>
+                    📢 <span class="js-weather"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="js/clock.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/tooltip.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
